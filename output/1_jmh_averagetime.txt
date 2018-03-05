@@ -1,0 +1,790 @@
+Hardware:
+  Model Name:	MacBook Pro
+  Model Identifier:	MacBookPro10,1
+  Processor Name:	Intel Core i7
+  Processor Speed:	2.3 GHz
+  Number of Processors:	1
+  Total Number of Cores:	4
+  L2 Cache (per Core):	256 KB
+  L3 Cache:	6 MB
+  Memory:	8 GB
+
+JMH output:
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson1Deser
+# Parameters: (next = 100)
+
+# Run progress: 0.00% complete, ETA 00:30:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.044 ms/op
+# Warmup Iteration   2: 0.037 ms/op
+# Warmup Iteration   3: 0.038 ms/op
+# Warmup Iteration   4: 0.039 ms/op
+# Warmup Iteration   5: 0.041 ms/op
+# Warmup Iteration   6: 0.041 ms/op
+# Warmup Iteration   7: 0.041 ms/op
+# Warmup Iteration   8: 0.039 ms/op
+# Warmup Iteration   9: 0.037 ms/op
+# Warmup Iteration  10: 0.038 ms/op
+Iteration   1: 0.038 ms/op
+Iteration   2: 0.038 ms/op
+Iteration   3: 0.037 ms/op
+Iteration   4: 0.038 ms/op
+Iteration   5: 0.039 ms/op
+Iteration   6: 0.039 ms/op
+Iteration   7: 0.038 ms/op
+Iteration   8: 0.039 ms/op
+Iteration   9: 0.038 ms/op
+Iteration  10: 0.037 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson1Deser":
+  0.038 ±(99.9%) 0.001 ms/op [Average]
+  (min, avg, max) = (0.037, 0.038, 0.039), stdev = 0.001
+  CI (99.9%): [0.037, 0.039] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson1Deser
+# Parameters: (next = 1000)
+
+# Run progress: 5.56% complete, ETA 00:28:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.235 ms/op
+# Warmup Iteration   2: 1.889 ms/op
+# Warmup Iteration   3: 2.012 ms/op
+# Warmup Iteration   4: 1.959 ms/op
+# Warmup Iteration   5: 1.993 ms/op
+# Warmup Iteration   6: 1.875 ms/op
+# Warmup Iteration   7: 1.930 ms/op
+# Warmup Iteration   8: 1.969 ms/op
+# Warmup Iteration   9: 1.996 ms/op
+# Warmup Iteration  10: 1.957 ms/op
+Iteration   1: 1.951 ms/op
+Iteration   2: 2.006 ms/op
+Iteration   3: 1.977 ms/op
+Iteration   4: 1.899 ms/op
+Iteration   5: 1.883 ms/op
+Iteration   6: 1.895 ms/op
+Iteration   7: 1.844 ms/op
+Iteration   8: 1.877 ms/op
+Iteration   9: 1.905 ms/op
+Iteration  10: 2.021 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson1Deser":
+  1.926 ±(99.9%) 0.090 ms/op [Average]
+  (min, avg, max) = (1.844, 1.926, 2.021), stdev = 0.059
+  CI (99.9%): [1.836, 2.016] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson1Deser
+# Parameters: (next = 10000)
+
+# Run progress: 11.11% complete, ETA 00:27:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 502.767 ms/op
+# Warmup Iteration   2: 312.611 ms/op
+# Warmup Iteration   3: 323.477 ms/op
+# Warmup Iteration   4: 335.673 ms/op
+# Warmup Iteration   5: 440.062 ms/op
+# Warmup Iteration   6: 366.252 ms/op
+# Warmup Iteration   7: 341.838 ms/op
+# Warmup Iteration   8: 337.831 ms/op
+# Warmup Iteration   9: 332.438 ms/op
+# Warmup Iteration  10: 429.604 ms/op
+Iteration   1: 340.146 ms/op
+Iteration   2: 325.332 ms/op
+Iteration   3: 324.195 ms/op
+Iteration   4: 314.977 ms/op
+Iteration   5: 393.782 ms/op
+Iteration   6: 348.627 ms/op
+Iteration   7: 460.228 ms/op
+Iteration   8: 511.689 ms/op
+Iteration   9: 437.629 ms/op
+Iteration  10: 317.939 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson1Deser":
+  377.454 ±(99.9%) 105.686 ms/op [Average]
+  (min, avg, max) = (314.977, 377.454, 511.689), stdev = 69.905
+  CI (99.9%): [271.769, 483.140] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson1Ser
+# Parameters: (next = 100)
+
+# Run progress: 16.67% complete, ETA 00:31:18
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.032 ms/op
+# Warmup Iteration   2: 0.027 ms/op
+# Warmup Iteration   3: 0.028 ms/op
+# Warmup Iteration   4: 0.031 ms/op
+# Warmup Iteration   5: 0.036 ms/op
+# Warmup Iteration   6: 0.030 ms/op
+# Warmup Iteration   7: 0.028 ms/op
+# Warmup Iteration   8: 0.028 ms/op
+# Warmup Iteration   9: 0.036 ms/op
+# Warmup Iteration  10: 0.037 ms/op
+Iteration   1: 0.038 ms/op
+Iteration   2: 0.053 ms/op
+Iteration   3: 0.029 ms/op
+Iteration   4: 0.028 ms/op
+Iteration   5: 0.028 ms/op
+Iteration   6: 0.028 ms/op
+Iteration   7: 0.029 ms/op
+Iteration   8: 0.029 ms/op
+Iteration   9: 0.028 ms/op
+Iteration  10: 0.028 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson1Ser":
+  0.032 ±(99.9%) 0.012 ms/op [Average]
+  (min, avg, max) = (0.028, 0.032, 0.053), stdev = 0.008
+  CI (99.9%): [0.020, 0.044] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson1Ser
+# Parameters: (next = 1000)
+
+# Run progress: 22.22% complete, ETA 00:27:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.767 ms/op
+# Warmup Iteration   2: 2.469 ms/op
+# Warmup Iteration   3: 2.594 ms/op
+# Warmup Iteration   4: 2.571 ms/op
+# Warmup Iteration   5: 2.903 ms/op
+# Warmup Iteration   6: 2.730 ms/op
+# Warmup Iteration   7: 2.585 ms/op
+# Warmup Iteration   8: 3.000 ms/op
+# Warmup Iteration   9: 2.522 ms/op
+# Warmup Iteration  10: 2.632 ms/op
+Iteration   1: 2.708 ms/op
+Iteration   2: 2.586 ms/op
+Iteration   3: 2.479 ms/op
+Iteration   4: 2.469 ms/op
+Iteration   5: 2.519 ms/op
+Iteration   6: 2.488 ms/op
+Iteration   7: 2.477 ms/op
+Iteration   8: 2.444 ms/op
+Iteration   9: 2.442 ms/op
+Iteration  10: 2.530 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson1Ser":
+  2.514 ±(99.9%) 0.122 ms/op [Average]
+  (min, avg, max) = (2.442, 2.514, 2.708), stdev = 0.081
+  CI (99.9%): [2.392, 2.636] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson1Ser
+# Parameters: (next = 10000)
+
+# Run progress: 27.78% complete, ETA 00:25:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 326.438 ms/op
+# Warmup Iteration   2: 434.977 ms/op
+# Warmup Iteration   3: 284.543 ms/op
+# Warmup Iteration   4: 294.380 ms/op
+# Warmup Iteration   5: 291.227 ms/op
+# Warmup Iteration   6: 286.755 ms/op
+# Warmup Iteration   7: 264.318 ms/op
+# Warmup Iteration   8: 266.070 ms/op
+# Warmup Iteration   9: 300.445 ms/op
+# Warmup Iteration  10: 278.215 ms/op
+Iteration   1: 267.568 ms/op
+Iteration   2: 306.416 ms/op
+Iteration   3: 293.484 ms/op
+Iteration   4: 292.291 ms/op
+Iteration   5: 292.074 ms/op
+Iteration   6: 287.824 ms/op
+Iteration   7: 268.310 ms/op
+Iteration   8: 263.777 ms/op
+Iteration   9: 286.464 ms/op
+Iteration  10: 287.194 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson1Ser":
+  284.540 ±(99.9%) 20.653 ms/op [Average]
+  (min, avg, max) = (263.777, 284.540, 306.416), stdev = 13.661
+  CI (99.9%): [263.887, 305.193] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2Deser
+# Parameters: (next = 100)
+
+# Run progress: 33.33% complete, ETA 00:24:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.041 ms/op
+# Warmup Iteration   2: 0.037 ms/op
+# Warmup Iteration   3: 0.036 ms/op
+# Warmup Iteration   4: 0.037 ms/op
+# Warmup Iteration   5: 0.037 ms/op
+# Warmup Iteration   6: 0.038 ms/op
+# Warmup Iteration   7: 0.037 ms/op
+# Warmup Iteration   8: 0.038 ms/op
+# Warmup Iteration   9: 0.037 ms/op
+# Warmup Iteration  10: 0.037 ms/op
+Iteration   1: 0.038 ms/op
+Iteration   2: 0.037 ms/op
+Iteration   3: 0.037 ms/op
+Iteration   4: 0.037 ms/op
+Iteration   5: 0.036 ms/op
+Iteration   6: 0.036 ms/op
+Iteration   7: 0.037 ms/op
+Iteration   8: 0.037 ms/op
+Iteration   9: 0.037 ms/op
+Iteration  10: 0.036 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2Deser":
+  0.037 ±(99.9%) 0.001 ms/op [Average]
+  (min, avg, max) = (0.036, 0.037, 0.038), stdev = 0.001
+  CI (99.9%): [0.036, 0.038] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2Deser
+# Parameters: (next = 1000)
+
+# Run progress: 38.89% complete, ETA 00:21:57
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.186 ms/op
+# Warmup Iteration   2: 1.958 ms/op
+# Warmup Iteration   3: 2.107 ms/op
+# Warmup Iteration   4: 1.964 ms/op
+# Warmup Iteration   5: 2.084 ms/op
+# Warmup Iteration   6: 1.914 ms/op
+# Warmup Iteration   7: 1.878 ms/op
+# Warmup Iteration   8: 1.921 ms/op
+# Warmup Iteration   9: 1.923 ms/op
+# Warmup Iteration  10: 1.950 ms/op
+Iteration   1: 1.947 ms/op
+Iteration   2: 1.903 ms/op
+Iteration   3: 1.954 ms/op
+Iteration   4: 1.920 ms/op
+Iteration   5: 1.913 ms/op
+Iteration   6: 2.015 ms/op
+Iteration   7: 1.963 ms/op
+Iteration   8: 2.006 ms/op
+Iteration   9: 2.056 ms/op
+Iteration  10: 2.054 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2Deser":
+  1.973 ±(99.9%) 0.085 ms/op [Average]
+  (min, avg, max) = (1.903, 1.973, 2.056), stdev = 0.056
+  CI (99.9%): [1.888, 2.058] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2Deser
+# Parameters: (next = 10000)
+
+# Run progress: 44.44% complete, ETA 00:19:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 423.094 ms/op
+# Warmup Iteration   2: 345.961 ms/op
+# Warmup Iteration   3: 375.159 ms/op
+# Warmup Iteration   4: 337.677 ms/op
+# Warmup Iteration   5: 341.691 ms/op
+# Warmup Iteration   6: 355.308 ms/op
+# Warmup Iteration   7: 332.701 ms/op
+# Warmup Iteration   8: 335.504 ms/op
+# Warmup Iteration   9: 350.209 ms/op
+# Warmup Iteration  10: 352.608 ms/op
+Iteration   1: 354.382 ms/op
+Iteration   2: 343.551 ms/op
+Iteration   3: 336.898 ms/op
+Iteration   4: 348.571 ms/op
+Iteration   5: 335.639 ms/op
+Iteration   6: 342.886 ms/op
+Iteration   7: 345.782 ms/op
+Iteration   8: 328.563 ms/op
+Iteration   9: 366.333 ms/op
+Iteration  10: 326.660 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2Deser":
+  342.926 ±(99.9%) 18.029 ms/op [Average]
+  (min, avg, max) = (326.660, 342.926, 366.333), stdev = 11.925
+  CI (99.9%): [324.898, 360.955] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2DeserAfterBurner
+# Parameters: (next = 100)
+
+# Run progress: 50.00% complete, ETA 00:18:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.034 ms/op
+# Warmup Iteration   2: 0.031 ms/op
+# Warmup Iteration   3: 0.031 ms/op
+# Warmup Iteration   4: 0.032 ms/op
+# Warmup Iteration   5: 0.032 ms/op
+# Warmup Iteration   6: 0.030 ms/op
+# Warmup Iteration   7: 0.031 ms/op
+# Warmup Iteration   8: 0.032 ms/op
+# Warmup Iteration   9: 0.032 ms/op
+# Warmup Iteration  10: 0.032 ms/op
+Iteration   1: 0.032 ms/op
+Iteration   2: 0.031 ms/op
+Iteration   3: 0.030 ms/op
+Iteration   4: 0.032 ms/op
+Iteration   5: 0.031 ms/op
+Iteration   6: 0.031 ms/op
+Iteration   7: 0.031 ms/op
+Iteration   8: 0.031 ms/op
+Iteration   9: 0.031 ms/op
+Iteration  10: 0.032 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2DeserAfterBurner":
+  0.031 ±(99.9%) 0.001 ms/op [Average]
+  (min, avg, max) = (0.030, 0.031, 0.032), stdev = 0.001
+  CI (99.9%): [0.030, 0.032] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2DeserAfterBurner
+# Parameters: (next = 1000)
+
+# Run progress: 55.56% complete, ETA 00:16:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.406 ms/op
+# Warmup Iteration   2: 2.074 ms/op
+# Warmup Iteration   3: 2.102 ms/op
+# Warmup Iteration   4: 2.139 ms/op
+# Warmup Iteration   5: 2.113 ms/op
+# Warmup Iteration   6: 2.083 ms/op
+# Warmup Iteration   7: 2.109 ms/op
+# Warmup Iteration   8: 2.127 ms/op
+# Warmup Iteration   9: 2.047 ms/op
+# Warmup Iteration  10: 2.080 ms/op
+Iteration   1: 2.068 ms/op
+Iteration   2: 2.247 ms/op
+Iteration   3: 2.111 ms/op
+Iteration   4: 2.134 ms/op
+Iteration   5: 2.010 ms/op
+Iteration   6: 2.083 ms/op
+Iteration   7: 2.130 ms/op
+Iteration   8: 2.081 ms/op
+Iteration   9: 2.073 ms/op
+Iteration  10: 2.083 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2DeserAfterBurner":
+  2.102 ±(99.9%) 0.094 ms/op [Average]
+  (min, avg, max) = (2.010, 2.102, 2.247), stdev = 0.062
+  CI (99.9%): [2.008, 2.195] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2DeserAfterBurner
+# Parameters: (next = 10000)
+
+# Run progress: 61.11% complete, ETA 00:13:52
+# Fork: 1 of 1
+# Warmup Iteration   1: 388.379 ms/op
+# Warmup Iteration   2: 329.171 ms/op
+# Warmup Iteration   3: 321.888 ms/op
+# Warmup Iteration   4: 361.100 ms/op
+# Warmup Iteration   5: 331.974 ms/op
+# Warmup Iteration   6: 317.714 ms/op
+# Warmup Iteration   7: 335.001 ms/op
+# Warmup Iteration   8: 325.037 ms/op
+# Warmup Iteration   9: 324.171 ms/op
+# Warmup Iteration  10: 331.921 ms/op
+Iteration   1: 326.285 ms/op
+Iteration   2: 323.247 ms/op
+Iteration   3: 315.067 ms/op
+Iteration   4: 335.318 ms/op
+Iteration   5: 335.932 ms/op
+Iteration   6: 313.573 ms/op
+Iteration   7: 342.732 ms/op
+Iteration   8: 328.241 ms/op
+Iteration   9: 328.550 ms/op
+Iteration  10: 338.146 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2DeserAfterBurner":
+  328.709 ±(99.9%) 14.542 ms/op [Average]
+  (min, avg, max) = (313.573, 328.709, 342.732), stdev = 9.619
+  CI (99.9%): [314.167, 343.252] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2Ser
+# Parameters: (next = 100)
+
+# Run progress: 66.67% complete, ETA 00:12:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.032 ms/op
+# Warmup Iteration   2: 0.029 ms/op
+# Warmup Iteration   3: 0.029 ms/op
+# Warmup Iteration   4: 0.029 ms/op
+# Warmup Iteration   5: 0.029 ms/op
+# Warmup Iteration   6: 0.028 ms/op
+# Warmup Iteration   7: 0.029 ms/op
+# Warmup Iteration   8: 0.030 ms/op
+# Warmup Iteration   9: 0.029 ms/op
+# Warmup Iteration  10: 0.029 ms/op
+Iteration   1: 0.028 ms/op
+Iteration   2: 0.030 ms/op
+Iteration   3: 0.029 ms/op
+Iteration   4: 0.029 ms/op
+Iteration   5: 0.028 ms/op
+Iteration   6: 0.028 ms/op
+Iteration   7: 0.028 ms/op
+Iteration   8: 0.029 ms/op
+Iteration   9: 0.028 ms/op
+Iteration  10: 0.029 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2Ser":
+  0.029 ±(99.9%) 0.001 ms/op [Average]
+  (min, avg, max) = (0.028, 0.029, 0.030), stdev = 0.001
+  CI (99.9%): [0.028, 0.030] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2Ser
+# Parameters: (next = 1000)
+
+# Run progress: 72.22% complete, ETA 00:10:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.906 ms/op
+# Warmup Iteration   2: 2.612 ms/op
+# Warmup Iteration   3: 2.541 ms/op
+# Warmup Iteration   4: 2.557 ms/op
+# Warmup Iteration   5: 2.578 ms/op
+# Warmup Iteration   6: 2.592 ms/op
+# Warmup Iteration   7: 2.541 ms/op
+# Warmup Iteration   8: 2.552 ms/op
+# Warmup Iteration   9: 2.593 ms/op
+# Warmup Iteration  10: 2.615 ms/op
+Iteration   1: 2.646 ms/op
+Iteration   2: 2.727 ms/op
+Iteration   3: 2.505 ms/op
+Iteration   4: 2.488 ms/op
+Iteration   5: 2.548 ms/op
+Iteration   6: 2.526 ms/op
+Iteration   7: 2.612 ms/op
+Iteration   8: 2.613 ms/op
+Iteration   9: 2.589 ms/op
+Iteration  10: 2.636 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2Ser":
+  2.589 ±(99.9%) 0.111 ms/op [Average]
+  (min, avg, max) = (2.488, 2.589, 2.727), stdev = 0.073
+  CI (99.9%): [2.478, 2.700] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2Ser
+# Parameters: (next = 10000)
+
+# Run progress: 77.78% complete, ETA 00:07:58
+# Fork: 1 of 1
+# Warmup Iteration   1: 472.577 ms/op
+# Warmup Iteration   2: 317.413 ms/op
+# Warmup Iteration   3: 313.256 ms/op
+# Warmup Iteration   4: 319.872 ms/op
+# Warmup Iteration   5: 291.841 ms/op
+# Warmup Iteration   6: 288.980 ms/op
+# Warmup Iteration   7: 300.960 ms/op
+# Warmup Iteration   8: 296.005 ms/op
+# Warmup Iteration   9: 292.644 ms/op
+# Warmup Iteration  10: 296.183 ms/op
+Iteration   1: 262.432 ms/op
+Iteration   2: 281.015 ms/op
+Iteration   3: 298.202 ms/op
+Iteration   4: 298.185 ms/op
+Iteration   5: 282.773 ms/op
+Iteration   6: 303.547 ms/op
+Iteration   7: 304.117 ms/op
+Iteration   8: 273.223 ms/op
+Iteration   9: 269.213 ms/op
+Iteration  10: 290.233 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2Ser":
+  286.294 ±(99.9%) 22.460 ms/op [Average]
+  (min, avg, max) = (262.432, 286.294, 304.117), stdev = 14.856
+  CI (99.9%): [263.834, 308.754] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2SerAfterBurner
+# Parameters: (next = 100)
+
+# Run progress: 83.33% complete, ETA 00:06:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.028 ms/op
+# Warmup Iteration   2: 0.029 ms/op
+# Warmup Iteration   3: 0.030 ms/op
+# Warmup Iteration   4: 0.027 ms/op
+# Warmup Iteration   5: 0.027 ms/op
+# Warmup Iteration   6: 0.027 ms/op
+# Warmup Iteration   7: 0.026 ms/op
+# Warmup Iteration   8: 0.026 ms/op
+# Warmup Iteration   9: 0.026 ms/op
+# Warmup Iteration  10: 0.026 ms/op
+Iteration   1: 0.027 ms/op
+Iteration   2: 0.027 ms/op
+Iteration   3: 0.027 ms/op
+Iteration   4: 0.026 ms/op
+Iteration   5: 0.026 ms/op
+Iteration   6: 0.025 ms/op
+Iteration   7: 0.026 ms/op
+Iteration   8: 0.027 ms/op
+Iteration   9: 0.025 ms/op
+Iteration  10: 0.027 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2SerAfterBurner":
+  0.026 ±(99.9%) 0.001 ms/op [Average]
+  (min, avg, max) = (0.025, 0.026, 0.027), stdev = 0.001
+  CI (99.9%): [0.026, 0.027] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2SerAfterBurner
+# Parameters: (next = 1000)
+
+# Run progress: 88.89% complete, ETA 00:04:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.855 ms/op
+# Warmup Iteration   2: 2.575 ms/op
+# Warmup Iteration   3: 2.563 ms/op
+# Warmup Iteration   4: 2.502 ms/op
+# Warmup Iteration   5: 2.547 ms/op
+# Warmup Iteration   6: 2.688 ms/op
+# Warmup Iteration   7: 2.577 ms/op
+# Warmup Iteration   8: 2.551 ms/op
+# Warmup Iteration   9: 2.640 ms/op
+# Warmup Iteration  10: 2.582 ms/op
+Iteration   1: 2.581 ms/op
+Iteration   2: 2.495 ms/op
+Iteration   3: 2.510 ms/op
+Iteration   4: 2.513 ms/op
+Iteration   5: 2.590 ms/op
+Iteration   6: 2.595 ms/op
+Iteration   7: 2.637 ms/op
+Iteration   8: 2.589 ms/op
+Iteration   9: 2.615 ms/op
+Iteration  10: 2.649 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2SerAfterBurner":
+  2.578 ±(99.9%) 0.082 ms/op [Average]
+  (min, avg, max) = (2.495, 2.578, 2.649), stdev = 0.054
+  CI (99.9%): [2.496, 2.659] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_162, VM 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 5 s each
+# Measurement: 10 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jmh.jackson.Jackson1VS2.jackson2SerAfterBurner
+# Parameters: (next = 10000)
+
+# Run progress: 94.44% complete, ETA 00:01:59
+# Fork: 1 of 1
+# Warmup Iteration   1: 370.960 ms/op
+# Warmup Iteration   2: 287.771 ms/op
+# Warmup Iteration   3: 340.724 ms/op
+# Warmup Iteration   4: 281.205 ms/op
+# Warmup Iteration   5: 298.806 ms/op
+# Warmup Iteration   6: 285.664 ms/op
+# Warmup Iteration   7: 285.245 ms/op
+# Warmup Iteration   8: 264.589 ms/op
+# Warmup Iteration   9: 276.479 ms/op
+# Warmup Iteration  10: 291.709 ms/op
+Iteration   1: 290.503 ms/op
+Iteration   2: 282.689 ms/op
+Iteration   3: 294.662 ms/op
+Iteration   4: 270.295 ms/op
+Iteration   5: 271.762 ms/op
+Iteration   6: 270.307 ms/op
+Iteration   7: 287.279 ms/op
+Iteration   8: 295.583 ms/op
+Iteration   9: 281.362 ms/op
+Iteration  10: 282.907 ms/op
+
+
+Result "jmh.jackson.Jackson1VS2.jackson2SerAfterBurner":
+  282.735 ±(99.9%) 14.430 ms/op [Average]
+  (min, avg, max) = (270.295, 282.735, 295.583), stdev = 9.544
+  CI (99.9%): [268.305, 297.164] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:36:32
+
+Benchmark                             (next)  Mode  Cnt    Score     Error  Units
+Jackson1VS2.jackson1Deser                100  avgt   10    0.038 ±   0.001  ms/op
+Jackson1VS2.jackson1Deser               1000  avgt   10    1.926 ±   0.090  ms/op
+Jackson1VS2.jackson1Deser              10000  avgt   10  377.454 ± 105.686  ms/op
+Jackson1VS2.jackson1Ser                  100  avgt   10    0.032 ±   0.012  ms/op
+Jackson1VS2.jackson1Ser                 1000  avgt   10    2.514 ±   0.122  ms/op
+Jackson1VS2.jackson1Ser                10000  avgt   10  284.540 ±  20.653  ms/op
+Jackson1VS2.jackson2Deser                100  avgt   10    0.037 ±   0.001  ms/op
+Jackson1VS2.jackson2Deser               1000  avgt   10    1.973 ±   0.085  ms/op
+Jackson1VS2.jackson2Deser              10000  avgt   10  342.926 ±  18.029  ms/op
+Jackson1VS2.jackson2DeserAfterBurner     100  avgt   10    0.031 ±   0.001  ms/op
+Jackson1VS2.jackson2DeserAfterBurner    1000  avgt   10    2.102 ±   0.094  ms/op
+Jackson1VS2.jackson2DeserAfterBurner   10000  avgt   10  328.709 ±  14.542  ms/op
+Jackson1VS2.jackson2Ser                  100  avgt   10    0.029 ±   0.001  ms/op
+Jackson1VS2.jackson2Ser                 1000  avgt   10    2.589 ±   0.111  ms/op
+Jackson1VS2.jackson2Ser                10000  avgt   10  286.294 ±  22.460  ms/op
+Jackson1VS2.jackson2SerAfterBurner       100  avgt   10    0.026 ±   0.001  ms/op
+Jackson1VS2.jackson2SerAfterBurner      1000  avgt   10    2.578 ±   0.082  ms/op
+Jackson1VS2.jackson2SerAfterBurner     10000  avgt   10  282.735 ±  14.430  ms/op
